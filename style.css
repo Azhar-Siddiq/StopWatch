@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #000;
+}
+.mainDiv h1{
+    font-size: 50px;
+    padding: 10px;
+    color: #000;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
+    0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+    font-weight: bold;
+}
+.swBg{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.swBg div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-image: url(./Assets/bg\ img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-weight: bold;
+}
+.btnDiv{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.btnDiv i{
+    cursor: pointer;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
+    0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+    color: #000;
+    font-size: 30px;
+}
+.btnDiv .hideBtn{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .swBg{
+        width: 100%;
+    }
+    .swBg div h2{
+        font-size: 30px;
+    }
+    .swBg div h3{
+        font-size: 25px;
+    }
+    .swBg div h4{
+        font-size: 20px;
+    }
+}
